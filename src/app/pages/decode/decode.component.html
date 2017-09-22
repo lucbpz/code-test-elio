@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="jumbotron">
+        <h2>Unhacked!: </h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let hacked of unhackedScores">
+                    <td>{{hacked.name}}</td>
+                    <td>{{hacked.score}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="button" routerLink="/scores" class="btn btn-primary">Back</button>
+    </div>
+</div>
